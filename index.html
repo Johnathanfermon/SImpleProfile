@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EnthusiasticCoder</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #fff;
+            text-align: center;
+            background: url('https://media.giphy.com/media/xTiTnxpQ3ghPiB2Hp6/giphy.gif') no-repeat center center fixed;
+            background-size:cover;
+        }
+        .overlay {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 3rem 2rem;
+            min-height: 100vh;
+        }
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        p.summary {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 2rem;
+            line-height: 1.6;
+        }
+        .card-container {
+            display:flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgb(23, 15, 255);
+            border-radius: 100px;
+            padding: 1.5rem;
+            width: 280px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+            transition: transform 0.7s;
+        }
+        .card:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 30px rgba(255, 255, 255, 0.4);
+        }
+        .section-title {
+            font-size: 2rem;
+            margin-top: 3rem;
+        }
+        .interested {
+            max-width: 700px;
+            margin: 2rem auto;
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+        .contact-card {
+            margin: 3rem auto;
+            padding: 2rem;
+            max-width: 400px;
+            border-radius: 20px;
+            background: url('https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExMWM3c3RlYmF3ODFxMGZiOXN6M21mbWd6b3p6eGFkcWR3dmIyYXE3biZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ThrM4jEi2lBxd7X2yz/giphy.gif') no-repeat center center;
+            background-size: cover;
+            position: relative;
+            box-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
+        }
+        .contact-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: rgba(0,0,0,0.5);
+            border-radius: 20px;
+            z-index: 0;
+        }
+        .contact-content {
+            position: relative;
+            z-index: 1;
+        }
+        .photo-frame {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 0 auto 1rem;
+            overflow: hidden;
+            border: 4px solid #ff8000;
+            box-shadow: 0 0 20px #ff8000, 0 0 40px #ff8000;
+            animation: glow-frame 2s infinite alternate;
+        }
+        .photo-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        @keyframes glow-frame {
+            from { box-shadow: 0 0 10px #0e0ee6, 0 0 20px #4c00ff; }
+            to { box-shadow: 0 0 20px #ff0000, 0 0 50px #ff0000; }
+        }
+        .contact-button {
+            display: inline-block;
+            margin-top: 1.5rem;
+            padding: 1rem 2rem;
+            background: #ff8000;
+            border: none;
+            border-radius: 30px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #fff;
+            text-decoration: none;
+            box-shadow: 0 0 20px #ff8000, 0 0 60px #3700ff;
+            animation: glow 1.5s infinite alternate;
+        }
+        @keyframes glow {
+            from { box-shadow: 0 0 10px #ff8000, 0 0 20px #0270ff; }
+            to { box-shadow: 0 0 20px #ff0000, 0 0 40px #0a37fe; }
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay">
+        <h1> Humble Yet Focused</h1>
+        <p class="summary">
+           About Me:<br><br>
+           I'm a Computer Science Engineering student with a strong interest in building real-world solutions through code. I enjoy working on both frontend and backend development, and have hands-on experience creating Java-based Android apps, weather APIs, and structured data tools. I’m also exploring systems like linked lists and memory handling in C, and actively improving my skills in web technologies and AI. I believe in learning by building and continuously refining my understanding of core computer science concepts.
+        </p>
+
+        <div class="section-title">Expertise</div>
+        <div class="card-container">
+            <div class="card">
+                <h3>Turning Ideas into Functional Code</h3>
+                <p>I’m good at translating real-world problems into structured and working programs using languages like Java, C, and JavaScript.</p>
+            </div>
+            <div class="card">
+                <h3>Building Practical Tech Projects</h3>
+                <p>Building Practical Tech Projects
+I’ve developed Android apps, calculators, weather-based web apps, and structured data tools that help reinforce my learning through actual implementation.</p>
+            </div>
+            <div class="card">
+                <h3>Understanding Core Concepts Deeply</h3>
+                <p>Whether it's how linked lists work under the hood or memory usage in arrays, I like to break things down, question how they function, and really understand what’s going on—beyond just writing code.
+
+.</p>
+            </div>
+        </div>
+
+        <div class="section-title">What I Do Best</div>
+        <div class="interested">
+           I’m currently pursuing my Bachelor’s in Computer Science Engineering and actively working on improving both my frontend and backend development skills. Alongside my college curriculum, I’m building personal projects like weather apps, note-taking tools, and learning how operating systems and memory management really work. <br><br>
+           I’m exploring data structures in C, building APIs with Node.js and Express, and diving into real-world logic through hands-on code. My focus is to gain a solid understanding of the fundamentals while developing practical tools that can be used, shared, and improved upon.
+
+<br><br>
+            Thank you for your time and consideration.<br><br>
+            Sincerely,<br>
+            <strong>Johnathan.</strong>
+        </div>
+
+        <div class="contact-card">
+            <div class="contact-content">
+                <div class="photo-frame">
+                    <img src="https://img.freepik.com/premium-photo/rear-view-person-standing-with-sword-terrace-city_1048944-1454039.jpg" alt="Profile Photo">
+                </div>
+                <a href="\previews\JSCSSHTML.html" class="contact-button" id="contactBtn">Get in Touch</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const button = document.getElementById('contactBtn');
+        let toggle = true;
+        setInterval(() => {
+            button.textContent = toggle ? "Contact Me" : "Get in Touch";
+            toggle = !toggle;
+        }, 3000);
+    </script>
+</body>
+</html>
